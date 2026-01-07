@@ -4,7 +4,7 @@
   functions = "netlify/functions"  # Optional, for serverless functions
 
 [build.environment]
-  NODE_VERSION = "18"  # Use Node.js 18
+  NODE_VERSION = "22"  # Use Node.js
 
 # For Vue Router history mode - IMPORTANT!
 [[redirects]]
