@@ -21,7 +21,7 @@
           <!-- if user is logged in, buttons to see own progress and events -->
           <div class="hero-actions" v-else>
             <router-link to="/progress" class="hero-button primary">
-              📊 Se min progress
+              📊 Se dina framsteg
             </router-link>
             <router-link to="/events" class="hero-button secondary"> 🏆 Visa events </router-link>
           </div>

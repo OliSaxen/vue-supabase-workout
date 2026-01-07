@@ -1,7 +1,7 @@
 <template>
   <div class="progress-view">
-    <h1>Min Progress</h1>
-
+    <h1>Framsteg</h1>
+    <h2>Logga din aktivitet</h2>
     <!-- Välj aktivitetstyp -->
     <div class="activity-type-selector">
       <button
@@ -525,6 +525,11 @@ const confirmDeleteActivity = async (activityId) => {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.progress-view h2{
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 h1 {

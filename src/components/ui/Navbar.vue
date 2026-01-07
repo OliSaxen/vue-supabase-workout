@@ -21,7 +21,7 @@
       <div class="nav-links" :class="{ 'active': isMenuOpen }">
         <router-link to="/" @click="closeMenu">Hem</router-link>
         <router-link to="/events" @click="closeMenu">Events</router-link>
-        <router-link to="/progress" @click="closeMenu">Min Progress</router-link>
+        <router-link to="/progress" @click="closeMenu">Mina framsteg</router-link>
         
         <!-- Användarmeny -->
         <div v-if="userStore.isAuthenticated" class="user-menu">
