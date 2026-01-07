@@ -1,12 +1,19 @@
 [build]
   command = "npm run build"
   publish = "dist"
-  functions = "netlify/functions"  # Optional, for serverless functions
 
+# CRITICAL: Force Node 20.19.0 (exact version Vite needs)
 [build.environment]
-  NODE_VERSION = "22"  # Use Node.js
+  NODE_VERSION = "20.19.0"
+  NPM_VERSION = "10.2.4"
+  # Alternative: Use latest 20.x
+  # NODE_VERSION = "20"
 
-# For Vue Router history mode - IMPORTANT!
+# Clear build cache (important!)
+[build.processing]
+  skip_processing = true
+
+# Redirects for Vue Router
 [[redirects]]
   from = "/*"
   to = "/index.html"
